@@ -7,9 +7,9 @@ import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
-import LoginPage from "views/examples/LoginPage";
-import RegisterPage from "views/examples/RegisterPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import LoginPage from "views/Pages/LoginPage";
+import RegisterPage from "views/Pages/RegisterPage.js";
+import ProfilePage from "views/Pages/ProfilePage.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

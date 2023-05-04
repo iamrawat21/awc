@@ -37,7 +37,7 @@ export default function NucleoIcons() {
           </Col>
         </Row>
         <div className="blur-hover">
-          <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
+          <a href="">
             <div className="icons-container blur-item on-screen mt-5">
               {/* Center */}
               <i className="icon tim-icons icon-coins" />
