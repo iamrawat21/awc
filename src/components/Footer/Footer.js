@@ -66,6 +66,11 @@ export default function Footer() {
                   License
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="">
+                  Contribute by Ishaan Jain
+                </NavLink>
+              </NavItem>
             </Nav>
           </Col>
           <Col md="3">
