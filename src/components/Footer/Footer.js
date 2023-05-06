@@ -68,7 +68,7 @@ export default function Footer() {
               </NavItem>
               <NavItem>
                 <NavLink href="">
-                  Contribute by Ishaan Jain
+                  
                 </NavLink>
               </NavItem>
             </Nav>
