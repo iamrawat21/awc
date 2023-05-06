@@ -120,20 +120,20 @@ export default function IndexNavbar() {
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
-                  Documentation
+                  <i />
+                  IIT
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                  <i  />
+                AIMS
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
+                  <i  />
+                 NIT
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/profile-page">
-                  <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  <i  />
+                  BITS
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -155,20 +155,20 @@ export default function IndexNavbar() {
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
-                  Documentation
+                  <i  />
+                  College 1
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                  <i />
+                  College 2 
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
+                  <i  />
+                  College 3
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/profile-page">
-                  <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  <i  />
+                  College 4
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -190,20 +190,20 @@ export default function IndexNavbar() {
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-paper" />
-                  Documentation
+                  JEE
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/register-page">
                   <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                  NEET
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                {/* <DropdownItem tag={Link} to="/landing-page">
                   <i className="tim-icons icon-image-02" />
                   Landing Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
+                </DropdownItem> */}
+                {/* <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />
                   Profile Page
-                </DropdownItem>
+                </DropdownItem> */}
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
@@ -230,10 +230,10 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                {/* <DropdownItem tag={Link} to="/landing-page">
                   <i className="tim-icons icon-image-02" />
                   Landing Page
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />
                   Profile Page
