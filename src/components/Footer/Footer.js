@@ -100,7 +100,7 @@ export default function Footer() {
               <UncontrolledTooltip delay={0} target="tooltip230450801">
                 Like us
               </UncontrolledTooltip>
-              <Button
+              {/* <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
                 href=""
@@ -111,7 +111,7 @@ export default function Footer() {
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip318450378">
                 Follow us
-              </UncontrolledTooltip>
+              </UncontrolledTooltip> */}
             </div>
           </Col>
         </Row>
