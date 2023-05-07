@@ -1,6 +1,6 @@
-
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import classnames from "classnames";
+import resources from "./resources.json";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 // reactstrap components
@@ -31,51 +31,30 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-const carouselItems = [
-  {
-    src: require("assets/img/denys.jpg"),
-    altText: "Slide 1",
-    caption: "Big City Life, United States"
-  },
-  {
-    src: require("assets/img/fabien-bazanegue.jpg"),
-    altText: "Slide 2",
-    caption: "Somewhere Beyond, United States"
-  },
-  {
-    src: require("assets/img/mark-finn.jpg"),
-    altText: "Slide 3",
-    caption: "Stocks, United States"
-  }
-];
+function ProfilePage() {
+  const [listData, setListData] = useState([]);
 
-let ps = null;
-
-export default function ProfilePage() {
-  const [tabs, setTabs] = React.useState(1);
-  React.useEffect(() => {
-    if (navigator.platform.indexOf("Win") > -1) {
-      document.documentElement.className += " perfect-scrollbar-on";
-      document.documentElement.classList.remove("perfect-scrollbar-off");
-      let tables = document.querySelectorAll(".table-responsive");
-      for (let i = 0; i < tables.length; i++) {
-        ps = new PerfectScrollbar(tables[i]);
-      }
-    }
-    document.body.classList.toggle("profile-page");
-    // Specify how to clean up after this effect:
-    return function cleanup() {
-      if (navigator.platform.indexOf("Win") > -1) {
-        ps.destroy();
-        document.documentElement.className += " perfect-scrollbar-off";
-        document.documentElement.classList.remove("perfect-scrollbar-on");
-      }
-      document.body.classList.toggle("profile-page");
-    };
+  useEffect(() => {
+    // fetch list data and update state
+    fetch('/api/list')
+      .then(response => response.json())
+      .then(data => setListData(data))
+      .catch(error => console.error(error));
   }, []);
-  return (
-    <>
 
-    </>
+  return (
+    <div>
+      <h1>List Page</h1>
+      <ul>
+        {listData.map(item => (
+          <li key={item.id}>
+            {item.title}
+            <h1>{resources.title}</h1>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
+
+export default ProfilePage;

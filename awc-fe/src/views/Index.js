@@ -9,6 +9,7 @@ import Footer from "components/Footer/Footer.js";
 import Tabs from "views/IndexSections/Tabs.js";
 import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
+import Courses from "./IndexSections/Courses";
 
 export default function Index() {
   React.useEffect(() => {
@@ -25,6 +26,7 @@ export default function Index() {
         <PageHeader />
         <div className="main">
           <Tabs />
+          <Courses />
           <NucleoIcons />
           <Signup />
         </div>

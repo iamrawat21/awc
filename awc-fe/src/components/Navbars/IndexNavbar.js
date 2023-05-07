@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // reactstrap components
 import {
   Button,
@@ -16,8 +17,27 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
+  UncontrolledCarousel
 } from "reactstrap";
+
+const carouselItems = [
+  {
+    src: require("assets/img/denys.jpg"),
+    altText: "Slide 1",
+    caption: ""
+  },
+  {
+    src: require("assets/img/fabien-bazanegue.jpg"),
+    altText: "Slide 2",
+    caption: ""
+  },
+  {
+    src: require("assets/img/mark-finn.jpg"),
+    altText: "Slide 3",
+    caption: ""
+  }
+];
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -119,21 +139,22 @@ export default function IndexNavbar() {
                 College
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
+              
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i />
-                  IIT
+                  MBBS
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/register-page">
                   <i  />
-                AIMS
+                BTECH
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/landing-page">
                   <i  />
-                 NIT
+                 BARCH
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/profile-page">
                   <i  />
-                  BITS
+                  OTHER
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -266,6 +287,7 @@ export default function IndexNavbar() {
           </Nav>
         </Collapse>
       </Container>
+  
     </Navbar>
   );
 }
